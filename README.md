@@ -18,6 +18,14 @@ public function index() {
   $this->document->addStyle('view/stylesheet/cssName.css');
 }
 ```
+Eğerki post ile bir işlem yaptırmak istersenizde 
+```
+public function index() {
+if (($this->request->server['REQUEST_METHOD'] == 'POST') 
+{ buraya kontrol ettirmek istediğiniz dataları yazabilirsiniz. }
+
+```
+
 Şimdi ise index function içine datalarımızı nereden çekeceğimizi gösteriyoruz.
 
 ```
