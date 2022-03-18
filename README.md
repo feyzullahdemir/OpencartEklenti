@@ -1,5 +1,6 @@
 # OpencartEklenti
 Opencart 3.x eklenti geliştiriken iki kısım mevcuttur. bir kısım admin diğer kısım ise catalog kısmı , dosyalama sistemi resimdeki gibidir.
+------
 <img width="298" alt="Screen Shot 2022-03-18 at 10 06 59 AM" src="https://user-images.githubusercontent.com/101548542/158954179-3a8e4722-e243-4127-9e2a-7625ced61f5c.png">
 ------
 
