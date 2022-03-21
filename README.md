@@ -6,7 +6,7 @@ Opencart 3.x eklenti geliştiriken iki kısım mevcuttur. bir kısım admin diğ
 
 Admin > controller > extension > payment > buraya dosya ismini yazıyoruz.
 payment klasörü ise payment kısmına ekleyeceğimiz için ekliyoruz dosyayı
-```
+```PHP
 public function index() {
 $this->load->language('extension/payment/payment');
 $this->load->model('extension/payment/payment');
