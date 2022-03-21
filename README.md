@@ -13,7 +13,7 @@ $this->load->model('extension/payment/payment');
 }
 ```
 Yukarı da ise dosyaları burada tanımlıyoruz.Css veya js tanımlamak için ise 
-```
+```PHP
 public function index() {
   $this->document->addStyle('view/stylesheet/cssName.css');
 }
@@ -57,7 +57,7 @@ view klasörüne ise css , image , js theme ile ilgili özelleştirmeleri buraya
 Model dosyamız içinde ise veri tabanı işlemlerini yapıyoruz.Burada fonksiyonlarınza install veya uninstall verirseniz yükleme veya silme durumlarında kolaylık sağlar.
 
 
-```
+```PHP
 public function install() {
         $this->db->query("
 			CREATE TABLE IF NOT EXISTS `" . DB_PREFIX . "name` (
@@ -80,7 +80,7 @@ Yükleme esnasında veri tabanı içinde tablo mevcut değil ise kurulum yapacak
 
 Burada ise veri tabanından bilgiyi çektik.
 
-```
+```PHP
  $name = array();
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "name");
 		foreach ($query->rows as $result) {
